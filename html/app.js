@@ -31,10 +31,9 @@ $(document).ready(function () {
                     $('[data-charid=' + char.cid + ']').html('' +
                         // formatted for easier reading
                         '<div class="slot-name">' +
-                        '<div class="slot-name-wrapper"><p><span id="slot-player-name">' + char.firstname + ' ' + char.lastname +'</span></p></div>' +
-                        '<div class="playperma-wrapper"><button class="play-button" data-cid="' + char.cid + '">Select</button>' +
-                        '<button class="delete-button" data-cid="' + char.cid + '">Perma</button></div>' +
-                        '</div>'
+                        '<div class="slot-name-wrapper"><p><span id="slot-player-name">' + char.firstname + ' ' + char.lastname +'</span></p><br>' +
+                        '<button class="play-button" data-cid="' + char.cid + '">Select</button></br><br>' +
+                        '<button class="delete-button" data-cid="' + char.cid + '">Perma</button></br></div>'
                     );
                 })
             }

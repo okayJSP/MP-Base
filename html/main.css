@@ -20,8 +20,8 @@ html, body, .grid-container {
     border-radius: 5px;
     background-color: rgba(0,0,0, 0.85);
     width: 20vw;
-    margin: 1rem;
-    height: 6vh;
+    margin: 0.5rem;
+    height: fit-content;
     padding: .5rem;
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.40);
 }
@@ -96,13 +96,28 @@ html, body, .grid-container {
 .modal-contents {
     height: 100%;
 	width: auto;
-	background-color: rgba(226, 226, 226, 0.6);
-    color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 1rem 4rem 4rem 4rem;
 	position: relative;
 	border-radius: 4px;
     /* overflow: hidden; */
+}
+
+.modal-contents p {
+    font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+    text-transform: uppercase;
+}
+
+.modal-contents button {
+    padding: 8px 4px;
+    border-radius: 6px;
+    font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
 }
 
 input, select {
@@ -120,6 +135,9 @@ input, select {
     height: 20%;
     text-transform: uppercase;
     transition: 0.2s;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .btn-accept {
@@ -129,19 +147,24 @@ input, select {
     transition: 0.2s;
     height: 20%;
     text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
 }
 
 .cancel-button {
     background-color: rgba(218, 24, 24, 0.75);
+    border-radius: 6px;
     width: 100%;
     border: none;
     transition: 0.2s;
     height: 20%;
+    color: white;
     text-transform: uppercase;
 }
 
 .accept-create {
     background-color: rgba(89, 179, 29, 0.75);
+    border-radius: 6px;
     width: 100%;
     border: none;
     transition: 0.2s;
@@ -154,59 +177,52 @@ input, select {
     justify-content: space-between;
     color: white;
     text-align: center;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 
 .slot-name > button {
-    margin: 0 1vw 0 1vw;
+    margin: 0 0.5vw 0 0.5vw;
     width: 40%;
 }
 
 .play-button {
-    box-shadow:inset 0px 1px 0px 0px #3dc21b;
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
+    background-color: rgba(0, 0, 0, 0.85);
 	border-radius:6px;
-	border:1px solid #18ab29;
 	display:inline-block;
+    border: none;
 	cursor:pointer;
-	color:#ffffff;
+	color: rgba(255, 255, 255, 0.8);
 	font-family:Arial;
 	font-size:16px;
 	font-weight:bold;
-	padding:8px 21px;
+	padding:6px 0px;
 	text-decoration:none;
-	text-shadow:0px 1px 3px #2f6627;
-    margin-left: 20px;
-    margin-top: 0.5rem;
+    width: 100%;
 }
 .play-button:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+    background-color: rgba(253, 252, 252, 0.10);
+    color: rgba(30, 255, 45, 0.8);
 }
 
 .delete-button {
-    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-	background-color:#fc8d83;
+    background-color: rgba(0, 0, 0, 0.85);
 	border-radius:6px;
-	border:1px solid #d83526;
 	display:inline-block;
+    border: none;
 	cursor:pointer;
-	color:#ffffff;
+	color: rgba(255, 255, 255, 0.8);
 	font-family:Arial;
 	font-size:16px;
 	font-weight:bold;
-	padding:8px 21px;
+	padding:6px 0px;
 	text-decoration:none;
-	text-shadow:0px 1px 3px #c23c32;
-    margin-left: 20px;
+    width: 100%;
 }
 
 .delete-button:hover {
-    background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
-	background-color:#e4685d;
+    background-color: rgba(253, 252, 252, 0.10);
+    color: rgba(255, 30, 30, 0.8);
 }
 
 .slot-name > button {
